@@ -50,22 +50,32 @@ public class Lab3_JoseLuisPereira {
                                 p.add(new Arquero(edad, nom, est, peso, cpiel, cpelo, raza, 150, 0, 50, 85, 15, 60, 20, "olsdeaaaaaaaa", raza2));
                             }
                             break;
-                    }
+                        case 2:
+                            System.out.println("Ingrese la personaje");
+                            String razas = lea.next();
+                            if (razas.equals("mago")) {
+                                p.add(new Mago(32, "Prozis", 1.78, 121, "azul", "verde", razas, 120, 50, 20, 70, 10, 2, 20, "hoawwww", "hobbit"));
+                            } else if (razas.equals("picaro")) {
+                                p.add(new picaro(18, "Leonardo Montoya", 1.75, 170, "blanco", "negro", razas, 150, 0, 55, 85, 30, 60, 50, "deraaaaaaa", "elfo"));
+                            } else if (razas.equals("berzek")) {
+                                p.add(new berzek(22, "ragnar", 1.90, 155, "negro", "cafe", razas, 190, 0, 80, 80, 20, 30, 15, "oitpoooooooooooo", "humano"));
+                            } else if (razas.equals("arquero")) {
+                                p.add(new Arquero(55, "hondrod", 1.34, 133, "verde", "morado", razas, 150, 0, 50, 85, 15, 60, 20, "olsdeaaaaaaaa", "enano"));
+                            }
 
-                    break;
+                            break;
+                    }
                 case 2:
-                    System.out.println("Ingrese la personaje");
-                    String raza = lea.next();
-                    if (raza.equals("mago")) {
-                        p.add(new Mago(32, "Prozis", 1.78, 121, "azul", "verde", raza, 120, 50, 20, 70, 10, 2, 20, "hoawwww", "hobbit"));
-                    } else if (raza.equals("picaro")) {
-                        p.add(new picaro(18, "Leonardo Montoya", 1.75, 170, "blanco", "negro", raza, 150, 0, 55, 85, 30, 60, 50, "deraaaaaaa", "elfo"));
-                    } else if (raza.equals("berzek")) {
-                        p.add(new berzek(22, "ragnar", 1.90, 155, "negro", "cafe", raza, 190, 0, 80, 80, 20, 30, 15, "oitpoooooooooooo", "humano"));
-                    } else if (raza.equals("arquero")) {
-                        p.add(new Arquero(55, "hondrod", 1.34, 133, "verde", "morado", raza, 150, 0, 50, 85, 15, 60, 20, "olsdeaaaaaaaa", "enano"));
+                    ArrayList<Arma> ar=new ArrayList();
+                    System.out.println("*****************Menu_Dificultad*****************");
+                    System.out.println("1) Dificultad");
+                    int ioj = lea.nextInt();
+                    switch (ioj) {
+                        case 1:
+                            
                     }
                     break;
+
                 case 3:
                     opw = 3;
                     break;
