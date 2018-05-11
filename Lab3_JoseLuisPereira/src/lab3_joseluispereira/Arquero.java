@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab3_joseluispereira;
 
-/**
- *
- * @author j0c3lwiz
- */
-public class Arquero {
+
+public class Arquero extends Personajes{
+
+    public Arquero(int edad, String nombre, double estatura, double peso, String cpiel, String cpelo, String raza, int hp, int ad, int eficacia, int velocidad, double probcri, int suerte, String grito) {
+        super(edad, nombre, estatura, peso, cpiel, cpelo, raza, hp, ad, eficacia, velocidad, probcri, suerte, grito);
+    }
+
+   
+
     
+    
+ 
 }

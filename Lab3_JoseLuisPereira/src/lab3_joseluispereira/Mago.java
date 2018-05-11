@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab3_joseluispereira;
 
-/**
- *
- * @author j0c3lwiz
- */
-public class Mago {
+
+public class Mago extends Personajes {
+
+    public Mago(int edad, String nombre, double estatura, double peso, String cpiel, String cpelo, String raza, int hp, int ap, int ad, int eficacia, int velocidad, double probcri, int suerte, String grito) {
+        super(edad, nombre, estatura, peso, cpiel, cpelo, raza, hp, ap, ad, eficacia, velocidad, probcri, suerte, grito);
+    }
+
+    
+
+    
+
+  
+
+    
     
 }
