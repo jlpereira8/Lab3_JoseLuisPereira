@@ -23,8 +23,9 @@ public class Personajes {
     private double probcri;
     private int suerte;
     private String grito;
+    private String raza2;
 
-    public Personajes(int edad, String nombre, double estatura, double peso, String cpiel, String cpelo, String raza, int hp, int ap, int ad, int eficacia, int velocidad, double probcri, int suerte, String grito) {
+    public Personajes(int edad, String nombre, double estatura, double peso, String cpiel, String cpelo, String raza, int hp, int ap, int ad, int eficacia, int velocidad, double probcri, int suerte, String grito, String raza2) {
         this.edad = edad;
         this.nombre = nombre;
         this.estatura = estatura;
@@ -40,6 +41,7 @@ public class Personajes {
         this.probcri = probcri;
         this.suerte = suerte;
         this.grito = grito;
+        this.raza2 = raza2;
     }
 
     public int getEdad() {
@@ -162,14 +164,18 @@ public class Personajes {
         this.grito = grito;
     }
 
-    @Override
-    public String toString() {
-        return "Personajes{" + "edad=" + edad + ", nombre=" + nombre + ", estatura=" + estatura + ", peso=" + peso + ", cpiel=" + cpiel + ", cpelo=" + cpelo + ", raza=" + raza + ", hp=" + hp + ", ap=" + ap + ", ad=" + ad + ", eficacia=" + eficacia + ", velocidad=" + velocidad + ", probcri=" + probcri + ", suerte=" + suerte + ", grito=" + grito + '}';
+    public String getRaza2() {
+        return raza2;
     }
 
-   
-  
+    public void setRaza2(String raza2) {
+        this.raza2 = raza2;
+    }
 
+    @Override
+    public String toString() {
+        return "Personajes{" + "edad=" + edad + ", nombre=" + nombre + ", estatura=" + estatura + ", peso=" + peso + ", cpiel=" + cpiel + ", cpelo=" + cpelo + ", raza=" + raza + ", hp=" + hp + ", ap=" + ap + ", ad=" + ad + ", eficacia=" + eficacia + ", velocidad=" + velocidad + ", probcri=" + probcri + ", suerte=" + suerte + ", grito=" + grito + ", raza2=" + raza2 + '}';
+    }
     
     
     
