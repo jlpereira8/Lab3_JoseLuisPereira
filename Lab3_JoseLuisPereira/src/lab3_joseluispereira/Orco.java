@@ -16,18 +16,20 @@ public class Orco extends Per_enemigo {
     
     Random r= new Random();
 
-    public Orco(int hp, int ap, int ad, int efi, int PdC, int vel, String nom, int ed, int est, int peso, Arma arm) {
-        super(hp, ap, ad, efi, PdC, vel, nom, ed, est, peso, arm);
-        this.setHp(70+r.nextInt(90));
-        this.setAp(0);
-        this.setAd(30+r.nextInt(45));
-        this.setEfi(20+r.nextInt(50));       
-        this.setPdC(60);
-        this.setVel(20);
-        this.setNom("Orco");
-        this.setEd(10 + r.nextInt(110));
-        this.setEst(1 + r.nextInt(120));
-        this.setPeso(20 + r.nextInt(80));
+    public Orco() {
+        
+        super.setHp(70+r.nextInt(90));
+        super.setAp(0);
+        super.setAd(30+r.nextInt(45));
+        super.setEfi(20+r.nextInt(50));       
+        super.setPdC(60);
+        super.setVel(20);
+        super.setNom("Orco");
+        super.setEd(10 + r.nextInt(110));
+        super.setEst(1 + r.nextInt(120));
+        super.setPeso(20 + r.nextInt(80));
+        Arma a21=new Arma(0,19,46,12,"usual","nelper");
+        super.setArm(a21);
     }
 
     

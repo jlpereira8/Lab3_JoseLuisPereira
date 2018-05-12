@@ -28,9 +28,11 @@ public class Bruja_enemiga extends Per_enemigo{
         super.setEd(18 + r.nextInt(100));
         super.setEst(80 + r.nextInt(200));
         super.setPeso(5 + r.nextInt(55));
-        Arma a=new Arma(3,12,32,14,"inusual","Diabolic");
+        Arma a=new Arma(3,12,32,14,"inusual","Dilaoic");
         super.setArm(a);
     }
+
+   
 
       
     

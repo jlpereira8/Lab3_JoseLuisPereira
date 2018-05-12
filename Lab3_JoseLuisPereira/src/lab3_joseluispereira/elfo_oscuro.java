@@ -16,18 +16,21 @@ public class elfo_oscuro extends Per_enemigo{
     
  Random r= new Random();
 
-    public elfo_oscuro(int hp, int ap, int ad, int efi, int PdC, int vel, String nom, int ed, int est, int peso, Arma arm) {
-        super(hp, ap, ad, efi, PdC, vel, nom, ed, est, peso, arm);
-        this.setHp(60+r.nextInt(120));
-        this.setAp(0);
-        this.setAd(30+r.nextInt(50));
-        this.setEfi(50+r.nextInt(70));       
-        this.setPdC(60);
-        this.setVel(20);
-        this.setNom("Elfo Oscuro");
-        this.setEd(10 + r.nextInt(110));
-        this.setEst(1 + r.nextInt(120));
-        this.setPeso(20 + r.nextInt(80));
+    public elfo_oscuro() {
+        super.setHp(60+r.nextInt(120));
+        super.setAp(0);
+        super.setAd(30+r.nextInt(50));
+        super.setEfi(50+r.nextInt(70));       
+        super.setPdC(60);
+        super.setVel(20);
+        super.setNom("Elfo Oscuro");
+        super.setEd(10 + r.nextInt(110));
+        super.setEst(1 + r.nextInt(120));
+        super.setPeso(20 + r.nextInt(80));
+        Arma a22=new Arma(0,34,16,12,"inusual","Diabolic");
+        super.setArm(a22);
+        Arma a223=new Arma(0,31,12,9,"inusual","Diabolics 2");
+        super.setArm(a223);
         
     }
  

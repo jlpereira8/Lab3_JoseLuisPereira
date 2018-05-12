@@ -25,19 +25,10 @@ public class Per_enemigo {
     private int peso;
     private Arma arm;
 
-    public Per_enemigo(int hp, int ap, int ad, int efi, int PdC, int vel, String nom, int ed, int est, int peso) {
-        this.hp = hp;
-        this.ap = ap;
-        this.ad = ad;
-        this.efi = efi;
-        this.PdC = PdC;
-        this.vel = vel;
-        this.nom = nom;
-        this.ed = ed;
-        this.est = est;
-        this.peso = peso;
-        this.arm = arm;
+    public Per_enemigo() {
     }
+
+    
 
     public int getHp() {
         return hp;
