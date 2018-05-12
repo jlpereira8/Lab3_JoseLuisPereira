@@ -108,7 +108,12 @@ public class Lab3_JoseLuisPereira {
                                     System.out.println(mochila.get(ee));
                                 } else if (pop.getSuerte() > req) {
                                     System.out.println("Usted encotro un enemigo");
-                                    
+                                    if(re<5){
+                                        Per_enemigo b =new Troll();
+                                    }else if(re>5||re<10){
+                                        Per_enemigo b =new elfo_oscuro();
+                                        System.out.println("p"+b);
+                                    }
                                 }
                                 
                             }
@@ -126,9 +131,9 @@ public class Lab3_JoseLuisPereira {
                     ArrayList<Arma> ar = new ArrayList();
                     System.out.println("*****************Menu_Dificultad*****************");
                     System.out.println("Seleccione la dificultad");
-                    System.out.println("1) Dificil");
+                    System.out.println("1) Facil");
                     System.out.println("2) Medio");
-                    System.out.println("3) Facil");
+                    System.out.println("3) Dificil");
                     int ioj = lea.nextInt();
                     switch (ioj) {
                         case 1:
@@ -142,6 +147,7 @@ public class Lab3_JoseLuisPereira {
                         case 3:
                             enemigos = 15;
                             pasos = 120;
+                            break;
                     }
                     break;
 
